@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../CSS, HTML, icons/favicon.ico" sizes="128x128">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost And Bound</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="common.css">
+    
+</head>
+<body>
+    <!------------------------------------  HEADER STARTING -------------------------------------->
+    <header>
+        <!-- logo for website -->
+        <a href="../Main.html"><img id="logo" src="../CSS, HTML, icons/logo.png"></a>
+    
+        <!-- Navigation bar for home , main ,etc -->
+        <ul id="nav">
+            <li><a href="../Main.html">Home</a></li>
+            <li><a href="#">Top</a></li>
+            <li><a href="#books">Visit Book Shelf</a></li>
+            <!-- <li><a href="#review">Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li> -->
+        </ul>
+        <button id="circle">| |</button>
+    </header>
+    <!------------------------------------  HEADER ENDING -------------------------------------->
+    
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES STARTING -------------------------------------->
+    <div>
+        <ul class="nav-small" style="font-family: 'Georgia';">
+            <li><a class="nav-btn" href="../Main.html">Home</a></li>
+            <li><a class="nav-btn" href="#">Top</a></li>
+            <li><a class="nav-btn" href="#books">Visit Book Shelf</a></li>
+        </ul>
+    </div>
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES ENDING -------------------------------------->
+    <div class="bg-image"></div><!----------------BACKGROUND IMAGE--------------------------------------->
+    <!--------------------------------------------------SLIDESHOW CAROUSEL---------------------------------------------->
+    
+    <div class="container" >
+        <div class="carousel slide" id="main-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#main-carousel" data-slide-to="1"></li>
+            <li data-target="#main-carousel" data-slide-to="2"></li>
+            <li data-target="#main-carousel" data-slide-to="3"></li>
+          </ol><!-- /.carousel-indicators -->
+          
+        <div class="carousel-inner ">
+            <div class="carousel-item">
+                <img class="d-block" src="Slideshow/10 Brilliant Book Ads.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="Slideshow/slideshow image 2.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="Slideshow/slideshow image 3.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="Slideshow/slideshowww.jpg" alt="" class="d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+          
+          <!-- /.carousel-inner -->
+          
+          
+        </div><!-- /.carousel -->
+      </div><!-- /.container -->
+     <!--------------------------------------------------SLIDESHOW CAROUSEL ENDING---------------------------------------------->
+    <!------------------------------------------------  BOOK-SHELF STARTING  ---------------------------------------------->
+    
+    <section id="books">
+        <DIV id="space"></DIV>
+        <div class="book">
+            <img src="../BookCovers/finance - history/1. the richest man in babylon.jpg" alt="The Richest Man In Babylon">
+            <span class="book-name">
+            The Richest Man In Babylon
+               
+                <p class="author">
+                    ~ George S. Clason
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                    Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc1"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 200/-</span></span>
+            <div class="modal fade" id="desc1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Richest Man In Babylon</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            From the importance of savings to the essentials on how to become wealthy, this collection of famous Babylonian parables imparts timeless financial wisdom. It offers insights on how to become wealthy and how to attract good luck and discusses the five laws of gold. A perfect guide to understanding finances and a powerhouse of time-tested principles to gain and retain personal wealth, The Richest Man in Babylon has been inspiring readers for generations. It continues to remain a classic bestseller.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/finance - history/12. Think like a boss.jpg" alt="Think Like A Boss">
+            <span class="book-name">
+                Think Like A Boss
+        
+                <p class="author">
+                    ~ Benjamin Shah
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc9"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Think Like A Boss</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Too little money, too little time, no desire. What excuse have you been using the most lately? But all these excuses will not help you on your way to a self-determined and independent life. further. Only those who look for solutions and use opportunities will make progress in life. You will learn how to become successful with the power of your thoughts and why positive is so important. In this guide, you'll learn what tactics you should use to protect your personal success and your dreams, and how you can get closer with the help of the right MINDSET can realize your goals.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/finance - history/11. The intelligent investor.png" alt="The Intelligent Investor">
+            <span class="book-name">
+                The Intelligent Investor
+        
+                <p class="author">
+                    ~ Benjamin Graham
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc10"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Intelligent Investor</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            It is a widely acclaimed book by Benjamin Graham on value investing. Written by one of the greatest investment advisers of twentieth century, the book aims at preventing potential investors from substantial errors and also teaches them strategies to achieve long-term investment goals. Over the years, investment market has been following teachings and strategies of Graham for growth and development. In the book, Graham has explained various principles and strategies for investing safely and successfully without taking bigger risks. Modern-day investors still continue to use his proven and well-executed techniques for value investment
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/finance - history/10. financial freedom.jpg" alt="Financial Freedom">
+            <span class="book-name">
+                Financial Freedom
+        
+                <p class="author">
+                    ~ Grant Sabatier
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc11"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Financial Freedom</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            In 2010, twenty-four-year old grant Sabatier woke up to find he had $2.26 in his Bank account. Five years later, he had a NET worth of over $1.25 million and CNBC began calling him "the millennial millionaire." by Age thirty, he had reached financial independence. Along the way he uncovered that most of the accepted wisdom about money, work and retirement is either incorrect, incomplete or so old-school it's obsolete. Financial freedom is a step-by-step path to make more money in less time, so you have more time for the things you love. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/finance - history/9. makers and takers.jpg" alt="Makers And Takers">
+            <span class="book-name">
+                Makers And Takers
+        
+                <p class="author">
+                    ~ Rana Foroohar
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc12"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Makers And Takers</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Drawing on in-depth reporting and exclusive interviews at the highest rungs of Wall Street and Washington, Foroohar shows how this phenomenon of our best and brightest companies behaving like glorfied banks is solidifying Wall Street's reign over Main Street, widening the gap between rich and poor, hampering economic progress and threatening the future of the American Dream. Exploring the forces that have led American businesses to favor banking over innovating, balancing-sheet engineering over the actual kind and the pursuit of short-term corporate profits over job creation, she shows how the infiltration of financialized thinking is so gravely harming our economy and society and why these issues matter so deeply and urgently to us all.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="book">
+            <img src="../BookCovers/finance - history/3. the psychology of money.jpg" alt="The Psychology Of Money">
+            <span class="book-name">
+               The Psychology Of Money
+               
+                <p class="author">
+                    ~ Morgan Housel
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc3"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 190/-</span></span>
+            <div class="modal fade" id="desc3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Psychology Of Money</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Timeless lessons on wealth, greed, and happiness doing well with money isn’t necessarily about what you know. It’s about how you behave. And behavior is hard to teach, even to really smart people. How to manage money, invest it, and make business decisions are typically considered to involve a lot of mathematical calculations, where data and formulae tell us exactly what to do. But in the real world, people don’t make financial decisions on a spreadsheet. They make them at the dinner table, or in a meeting room, where personal history, your unique view of the world, ego, pride, marketing, and odd incentives are scrambled together. In the psychology of money, the author shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life’s most important matters.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/finance - history/4. broke millenial.jpg" alt="Broke Millenial">
+            <span class="book-name">
+                Broke Millenial
+                
+                <p class="author">
+                    ~ Erin Lowry
+                    <br>
+                    <span class="rating">
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    </span>
+                </p>
+                <a href="../Third Page/BuyBook.html">
+                    <button style="margin-top: -20px;" class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc4" style="margin:-15px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price" style="margin-bottom:20px;"> 250/-</span></span>
+            <div class="modal fade" id="desc4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Broke Millenial</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            If you’re a cash-strapped 20- or 30-something, it’s easy to get freaked out by finances. But you’re not doomed to spend your life drowning in debt or mystified by money. It’s time to stop scraping by and take control of your money and your life with this savvy and smart guide. Broke Millennial shows step-by-step how to go from flat-broke to financial badass. Unlike most personal finance books out there, it doesn’t just cover boring stuff like credit card debt, investing, and dealing with the dreaded “B” word (budgeting). Financial expert Erin Lowry goes beyond the basics to tackle tricky money matters and situations most of us face
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/finance - history/5. your money or your life.jpg" alt="Your Money Or Your Life">
+            <span class="book-name">
+                Your Money Or Your Life
+                
+                <p class="author">
+                    ~ Vicki Robin
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc5"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price">170/-</span></span>
+            <div class="modal fade" id="desc5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Your Money Or Your Life</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            For more than twenty-five years, Your Money or Your Life has been considered the go-to book for taking back your life by changing your relationship with money. Hundreds of thousands of people have followed this nine-step program, learning to live more deliberately and meaningfully with Vicki Robin’s guidance. This fully revised and updated edition with a foreword by "the Frugal Guru" (New Yorker) Mr. Money Mustache is the ultimate makeover of this bestselling classic, ensuring that its time-tested wisdom applies to people of all ages and covers modern topics like investing in index funds, managing revenue streams like side hustles and freelancing, tracking your finances online, and having difficult conversations about money.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/finance - history/6. zero to one.jpg" alt="Zero to One">
+            <span class="book-name">
+                Zero to One
+                
+                <p class="author">
+                    ~ Peter Thiel
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc6"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 240/-</span></span>
+            <div class="modal fade" id="desc6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Zero to One</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won’t make a search engine. If you are copying these guys, you aren’t learning from them. It’s easier to copy a model than to make something new: doing what we already know how to do takes the world from 1 to n, adding more of something familiar. Every new creation goes from 0 to 1. This book is about how to get there.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/finance - history/7. rework.jpg" alt="Rework">
+            <span class="book-name">
+               Rework
+                
+                <p class="author">
+                    ~ Jason Fried & David H. Hansson
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc7" style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 200/-</span></span>
+            <div class="modal fade" id="desc7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Rework</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Rework is a unique business book which shows the reader a better, faster, easier way to be successful in business. The book tells the reader why plans are truly harmful, why people don't need outside investors and why a person is better ignoring the competition. The book tells the reader what you really need to be successful which is to stop talking and start working. This book shows the reader the right way. It teaches the reader how to be more creative, how to get exposure without wasting money and tons of other senseless thoughts that will motivate and provoke the reader.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/finance - history/8. one up on wall street.jpg" alt="One Up On Wall Street">
+            <span class="book-name">
+                One Up On Wall Street
+                <p class="author">
+                    ~ Peter Lynch
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                <button class="buy-btn btn btn-outline-primary">
+                    Buy Now
+                </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc8" style="margin-top: 0px;">
+                    Know More
+                </button>
+                <span class="price"> 500/-</span>
+            </span>
+            <div class="modal fade" id="desc8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">One Up On Wall Street</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Penned by the famous mutual-fund manager, Peter Lynch, this book elaborates the many advantages that an average investor has over professionals and how they can help them reach financial triumph. How To Use What You Already Know To Make Money in The Market explains how your knowledge alone can assist you beat the pros of investing. From the viewpoint of America's most triumphant money manager, investment chances are extensively accessible.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------  BOOK-SHELF ENDING  ---------------------------------------------->
+
+<script src="common.js"></script>
+</body>
+</html>

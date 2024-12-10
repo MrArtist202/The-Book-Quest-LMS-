@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../CSS, HTML, icons/favicon.ico" sizes="128x128">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost And Bound</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="common.css">
+    
+</head>
+<body>
+    <!------------------------------------  HEADER STARTING -------------------------------------->
+    <header>
+        <!-- logo for website -->
+        <a href="../Main.html"><img id="logo" src="../CSS, HTML, icons/logo.png"></a>
+    
+        <!-- Navigation bar for home , main ,etc -->
+        <ul id="nav">
+            <li><a href="../Main.html">Home</a></li>
+            <li><a href="#">Top</a></li>
+            <li><a href="#books">Visit Book Shelf</a></li>
+            <!-- <li><a href="#review">Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li> -->
+        </ul>
+        <button id="circle">| |</button>
+    </header>
+    <!------------------------------------  HEADER ENDING -------------------------------------->
+    
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES STARTING -------------------------------------->
+    <div>
+        <ul class="nav-small" style="font-family: 'Georgia';">
+            <li><a class="nav-btn" href="../Main.html">Home</a></li>
+            <li><a class="nav-btn" href="#">Top</a></li>
+            <li><a class="nav-btn" href="#books">Visit Book Shelf</a></li>
+        </ul>
+    </div>
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES ENDING -------------------------------------->
+    <div class="bg-image"></div><!----------------BACKGROUND IMAGE--------------------------------------->
+    <!--------------------------------------------------SLIDESHOW CAROUSEL---------------------------------------------->
+    
+    <div class="container" >
+        <div class="carousel slide" id="main-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#main-carousel" data-slide-to="1"></li>
+            <li data-target="#main-carousel" data-slide-to="2"></li>
+            <li data-target="#main-carousel" data-slide-to="3"></li>
+          </ol><!-- /.carousel-indicators -->
+          
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img class="d-block" src="Slideshow/10 Brilliant Book Ads.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="Slideshow/slideshow image 2.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="Slideshow/slideshow image 3.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Slideshow/slideshowww.jpg" alt="" class="d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+          
+          <!-- /.carousel-inner -->
+          
+          
+        </div><!-- /.carousel -->
+      </div><!-- /.container -->
+     <!--------------------------------------------------SLIDESHOW CAROUSEL ENDING---------------------------------------------->
+    <!------------------------------------------------  BOOK-SHELF STARTING  ---------------------------------------------->
+    
+    <section id="books">
+        <DIV id="space"></DIV>
+        <div class="book">
+            <img src="../BookCovers/romance/Pride_and_prejudice.jpg" alt="Pride and Prejudice">
+            <span class="book-name">
+                Pride and Prejudice
+               
+                <p class="author">
+                    ~ Jane Austen
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                    Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc1"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 200/-</span></span>
+            <div class="modal fade" id="desc1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Pride and Prejudice</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Tory of Mr. Bennet, an English gentleman, who lives in Hertfordshire with his overbearing wife and five daughters. The Bennet girls; the graceful Jane, the dexterous Elizabeth, the studious Mary, the juvenile Kittty and the wild Lydia; although very distinct in nature from one another are living happily with their parents in the town house. But, to their dismay, if Mr. Bennet dies their distant cousin will inherit this house. Hence, the security and prosperity of the family depends on the daughters marrying into rich families. Soon a wealthy bachelor Mr. Bingley, along with his uptight friend Mr. Darcy, moves into a house nearby. This new turn of events makes Mrs. Bennet hopeful for her daughters’ future and, soon enough, the beautiful Jane falls for Mr. Bingley. While this hopeful union is taking place, Elizabeth and Mr. Darcy start up battles of sexes eventually falling for each other.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/12. everything after.jpg" alt="Everything After">
+            <span class="book-name">
+               Everything After
+        
+                <p class="author">
+                    ~ Jill Santopolo
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc9"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Everything After</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Emily has come a long way since she lost her two passions fifteen years ago: music, and Rob. She's a psychologist at NYU who helps troubled college students like the one she once was. Together with her caring doctor husband, Ezra, she has a beautiful life. They're happy. They hope to start a family. But when a tragic event in Emily's present too closely echoes her past, and parts of her story that she'd hoped never to share come to light, her perfect life is suddenly upturned. Then Emily hears a song on the radio about the woman who got away. The melody and voice are hauntingly familiar. Could it be? As Emily's past passions come roaring back into her life, she'll find herself asking: Who is she meant to be? Who is she meant to love?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/11. the story begins at the end.jpeg" alt="The Story Begins At The End">
+            <span class="book-name">
+               The Story Begins At The End
+        
+                <p class="author">
+                    ~ Sujay
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc10"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Story Begins At The End</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            There isn't anything such as. true loveAnd there isn't a false love. it is just love.Have you ever googled the word? Asked Siri, Alexa? Is there a synonym for it.The word is complete in itself, it is the most powerful and yet the most humbling emotion. The story begins at the end is a collection of such stories that celebrate love in its myriad forms. The collection holds most of the narratives in such a way that they could well be starting off by the end of the story, the beginning of love, figuratively and literary –the last line coming forth from the first.Love is the window to our souls. It is not the fear of being alone, it is a matterof being together.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/10. gone with the wind.jpg" alt="Gone With The Wind">
+            <span class="book-name">
+                Gone With The Wind
+        
+                <p class="author">
+                    ~ Margaret Mitchell
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc11"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Gone With The Wind</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Born in Atlanta, Georgia, in November 1900, Margaret Munnerlyn Mitchell belonged to a wealthy and a politically prominent family. She spent her early childhood on Jackson Hill, east of downtown Atlanta and grew up in Southern culture. Encouraged by her husband, she began writing the novel that would become Gone with the Wind. Nine complete drafts of the thousand-page work, she set this epic romance against the dramatic backdrop of the Civil War. Published in 1936, ten years after she began writing it, Gone with the Wind was a smash success. it became and still remains, one of the classic masterpieces of all time. Receiving a Pulitzer Prize in 1937, a film version of the novel was planned in the late 1930s. it was her only novel published during her lifetime.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/9. Love unscripted.jpg" alt="Love Unscripted">
+            <span class="book-name">
+                Love Unscripted
+        
+                <p class="author">
+                    ~ Owen Nicholas
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc12"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Love Unscripted</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Ellie had the quizzical eyebrows of Broadcast News–era Holly Hunter and the neon-red hair of Kate Winslet in Eternal Sunshine of the Spotless Mind. At least that’s what caught Nick’s attention when he met her on the night of 2008’s historic presidential election. A cinema buff and devotee of great love stories, Nick always fancied himself the Tom Hanks of his own romantic comedy, and when sparks flew with Ellie that night, he swiftly cast her as the Meg Ryan of his story. For four blissful years, Nick loved Ellie just as he loved his job as a film projectionist: wholly, earnestly, cinematically.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/fifty_shades_of_grey.jpg" alt="Fifty Shades Of Grey">
+            <span class="book-name">
+                Fifty Shades Of Grey
+                
+                <p class="author">
+                    ~ EL James
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc2"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 140/-</span></span>
+            <div class="modal fade" id="desc2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Fifty Shades Of Grey</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Fifty Shades of Grey of by E.L. James is a romantic thriller that comes with a supernatural twist. An erotic romantic novel, it is the first part in the Fifty Shades Trilogy that tracks the relationship between a college girl and a young successful business person. Based around Anastasia Steele, a 21-year old college girl who on behalf of her friend Kate interviews Christian Grey, an uber rich successful businessman. The unfolding sadomasochistic relationship turns ugly as the plot, filled with many twists and turns, further reveals about how the life of a simple college girl, who fell in love with the rich person, turns her world upside down.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/it_ends_with_us.jpg" alt="It Ends With Us">
+            <span class="book-name">
+                It Ends With Us
+               
+                <p class="author">
+                    ~ Colleen Hoover
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc3"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 190/-</span></span>
+            <div class="modal fade" id="desc3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">It Ends With Us</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            The newest, highly anticipated novel from beloved #1 New York Times bestselling author, Colleen Hoover. Sometimes it is the one who loves you who hurts you the most. Lily hasn’t always had it easy, but that’s never stopped her from working hard for the life she wants. She’s come a long way from the small town in Maine where she grew up—she graduated from college, moved to Boston and started her own business. So when she feels a spark with a gorgeous neurosurgeon named Ryle Kincaid, everything in Lily’s life suddenly seems almost too good to be true. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/let_it_snow.jpg" alt="Let it Snow">
+            <span class="book-name">
+                Let it Snow
+                
+                <p class="author">
+                    ~ John Green, Lauren Myracle,<br> Maureen Johnson
+                    <br>
+                    <span class="rating">
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    </span>
+                </p>
+                <a href="../Third Page/BuyBook.html">
+                    <button style="margin-top: -20px;" class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc4" style="margin:-15px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price" style="margin-bottom:20px;"> 250/-</span></span>
+            <div class="modal fade" id="desc4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Let it Snow</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            On the Christmas Eve, snow storm would transform one small town into a romantic heaven. Bright colorful lights, snow on the roads, beautiful presents and ribbons make the night glittery. No one could think that a trip to waffle house trough four feet of snow would lead to a love story with an old friend. The story is quite hilarious and gets the reader in the holiday spirit. Let It Snow is an anthology of three short stories, compiled together by a thread written by Maureen Johnson, John Green and Laureen Myracle. It is a light, fun-loving and festive story.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/me_before_you.jpg" alt="Me Before You">
+            <span class="book-name">
+                Me Before You
+                
+                <p class="author">
+                    ~ Jojo Moyes
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc5"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price">170/-</span></span>
+            <div class="modal fade" id="desc5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Me Before You</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            The heartbreaking novel of the year from Jojo Moyes that proves you're never too old or too young to cry. Lou Clark knows lots of things. She knows how many footsteps there are between the bus stop and home. She knows she likes working in The Buttered Bun tea shop and she knows she might not love her boyfriend Patrick. Will Traynor knows his motorcycle accident took away his desire to live. He knows everything feels very small and rather joyless now and he knows exactly how he's going to put a stop to that. What Will doesn't know is that Lou is about to burst into his world in a riot of colour. And neither of them knows they're going to change the other for all time.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/the_fault_in_our_stars.jpg" alt="The Fault In Our Stars">
+            <span class="book-name">
+                The Fault In Our Stars
+                
+                <p class="author">
+                    ~ John Green
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc6"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 240/-</span></span>
+            <div class="modal fade" id="desc6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Fault In Our Stars</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            The Fault in our Stars is a book for everyone, be it people in their old age, or teens studying in school, this book is an ideal feel good and emotional novel for all. Written by John Green and published by Penguin UK, in the year 2013, this book has gone on to become a major seller in all parts of the world. It has sold more than ten million copies worldwide.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/the_notebook.jpg" alt="The Notebook">
+            <span class="book-name">
+                The Notebook
+                
+                <p class="author">
+                    ~ Nicholas Sparks
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc7" style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 200/-</span></span>
+            <div class="modal fade" id="desc7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Notebook</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Noah Calhoun has returned from war and, in an attempt to escape the ghosts of battle, he sets his mind and his body to restoring an old plantation home to its former beauty. But he is haunted by memories of the beautiful girl he met there years before. A girl who stole his heart at the funfair, whose parents didn't approve, a girl he wrote to every day for a year. When Allie Hamilton shows up on his doorstep, exactly as he has held her in his memory for all these years, Noah has one last chance to win her back. Only this time, it's not just her parents in the way - Allie is engaged and she's not a woman to go back on her promises. The Notebook is the love story to end all love stories - it will break your heart, heal it back up and break it all over again.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/romance/the_proposal.jpg" alt="The Proposal">
+            <span class="book-name">
+                The Proposal
+                <p class="author">
+                    ~ Jasmine Guillory
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                <button class="buy-btn btn btn-outline-primary">
+                    Buy Now
+                </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc8" style="margin-top: 0px;">
+                    Know More
+                </button>
+                <span class="price"> 500/-</span>
+            </span>
+            <div class="modal fade" id="desc8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Proposal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            At the game with his sister, Carlos Ibarra comes to Nik’s rescue and rushes her away from a camera crew. He’s even there for her when the video goes viral and Nik’s social media blows up—in a bad way. Nik knows that in the wilds of LA, a handsome doctor like Carlos can't be looking for anything serious, so she embarks on an epic rebound with him, filled with food, fun, and fantastic sex. But when their glorified hookups start breaking the rules, one of them has to be smart enough to put on the brakes...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------  BOOK-SHELF ENDING  ---------------------------------------------->
+
+<script src="common.js"></script>
+</body>
+</html>

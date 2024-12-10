@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../CSS, HTML, icons/favicon.ico" sizes="128x128">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost And Bound</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="common.css">
+    
+</head>
+<body>
+    <!------------------------------------  HEADER STARTING -------------------------------------->
+    <header>
+        <!-- logo for website -->
+        <a href="../Main.html"><img id="logo" src="../CSS, HTML, icons/logo.png"></a>
+    
+        <!-- Navigation bar for home , main ,etc -->
+        <ul id="nav">
+            <li><a href="../Main.html">Home</a></li>
+            <li><a href="#">Top</a></li>
+            <li><a href="#books">Visit Book Shelf</a></li>
+            <!-- <li><a href="#review">Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li> -->
+        </ul>
+        <button id="circle">| |</button>
+    </header>
+    <!------------------------------------  HEADER ENDING -------------------------------------->
+    
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES STARTING -------------------------------------->
+    <div>
+        <ul class="nav-small" style="font-family: 'Georgia';">
+            <li><a class="nav-btn" href="../Main.html">Home</a></li>
+            <li><a class="nav-btn" href="#">Top</a></li>
+            <li><a class="nav-btn" href="#books">Visit Book Shelf</a></li>
+        </ul>
+    </div>
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES ENDING -------------------------------------->
+    <div class="bg-image"></div><!----------------BACKGROUND IMAGE--------------------------------------->
+    <!--------------------------------------------------SLIDESHOW CAROUSEL---------------------------------------------->
+    
+    <div class="container" >
+        <div class="carousel slide" id="main-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#main-carousel" data-slide-to="1"></li>
+            <li data-target="#main-carousel" data-slide-to="2"></li>
+            <li data-target="#main-carousel" data-slide-to="3"></li>
+          </ol><!-- /.carousel-indicators -->
+          
+        <div class="carousel-inner ">
+            <div class="carousel-item">
+                <img class="d-block" src="Slideshow/10 Brilliant Book Ads.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="Slideshow/slideshow image 2.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img class="d-block" src="Slideshow/slideshow image 3.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Slideshow/slideshowww.jpg" alt="" class="d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+          
+          <!-- /.carousel-inner -->
+          
+          
+        </div><!-- /.carousel -->
+      </div><!-- /.container -->
+     <!--------------------------------------------------SLIDESHOW CAROUSEL ENDING---------------------------------------------->
+    <!------------------------------------------------  BOOK-SHELF STARTING  ---------------------------------------------->
+    
+    <section id="books">
+        <DIV id="space"></DIV>
+        <div class="book">
+            <img src="../BookCovers/Self_help/1. think and grow rich.jpg" alt="Think And Grow Rich">
+            <span class="book-name">
+                Think And Grow Rich
+               
+                <p class="author">
+                    ~ Napolean Hill
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                    Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc1"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 200/-</span></span>
+            <div class="modal fade" id="desc1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Think And Grow Rich</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Ever wondered how life would be if we could condition our minds to Think and Grow Rich? Author Napoleon Hill claims to have based this book on twenty years of rigorous research on the lives of those who had amassed great wealth and made a fortune. Observing their habits, their ways of working and the principles they followed, Hill put together laws and philosophies that can be practiced in everyday life to achieve all-round success.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/12. the scientific thinker.jpg" alt="The Scientific Thinker">
+            <span class="book-name">
+                The Scientific Thinker
+        
+                <p class="author">
+                    ~ Tristan Hopkins
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc9"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Scientific Thinker</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                           Forget the old concept of retirement and the rest of the deferred-life plan - there is no need to wait and every reason not to, especially in unpredictable economic times. Whether your dream is escaping the rat race, experiencing high-end world travel, earning a monthly five-figure income with zero management, or just living more and working less, this book is the bluepri
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/11. the greatest bond.jpg" alt="The Greatest Bond">
+            <span class="book-name">
+                The Greatest Bond
+        
+                <p class="author">
+                    ~ Veronika Pickett
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc10"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Greatest Bond</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            In her wildly popular book, Veronika doesn’t sugarcoat or equivocate. She tells it like it is—a dose of raw, refreshing, honest truth that is sorely lacking today. The Greatest Bond is her antidote to the coddling, let’s-all-feel-good mindset that has infected American society and spoiled a generation, rewarding them with gold medals just for showing up.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/10. 30 days of gratitude.jpg" alt="30 Days Of Gratitude">
+            <span class="book-name">
+               30 Days Of Gratitude
+                <p class="author">
+                    ~ Paula Hudson
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc11"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">30 Days Of Gratitude</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Authors Paula Hudson has penned short devotions that guide you, the reader, toward looking at your attitude of spiritual gratitude. By following this simple thirty day devotional plan, within one short month, your heart can be more attuned to offering spiritual gratitude in your walk with the Lord.The author has kept the devotionals short so you can spend more time thinking about the scriptures, then express your own thoughts back to God.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/9. think smart not hard.jpg" alt="Think Smart Not Hard">
+            <span class="book-name">
+                Think Smart Not Hard
+        
+                <p class="author">
+                    ~ Roy Huff
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc12"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Think Smart Not Hard</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Struggling to cope with personal tragedy? Worried you’ll never live up to your full potential? Bestselling author Roy Huff overcame abuse and abject poverty to become an accomplished teacher and research scientist. His secrets for success have changed countless lives, and now they can help you too! Think Smart Not Hard connects science and human psychology to help you retrain your brain for a brighter tomorrow. Through a combination of step-by-step strategies and inspirational anecdotes, this transformational guidebook will help you conquer common obstacles to discover your life’s true path.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/2. the subtle art of not giving a fuck.jpg" alt="The Subtle Art Of Not Giving A Fuck">
+            <span class="book-name">
+                The Subtle Art Of Not Giving A Fuck
+                
+                <p class="author">
+                    ~ Mark Manson
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc2"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 140/-</span></span>
+            <div class="modal fade" id="desc2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Subtle Art Of Not Giving A Fuck</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            For decades, we’ve been told that positive thinking is the key to a happy, rich life. "F**k positivity," Mark Manson says. "Let’s be honest, shit is f**ked and we have to live with it." In his wildly popular Internet blog, Mason doesn’t sugarcoat or equivocate. He tells it like it is—a dose of raw, refreshing, honest truth that is sorely lacking today. The Subtle Art of Not Giving a F**k is his antidote to the coddling, let’s-all-feel-good mindset that has infected American society and spoiled a generation, rewarding them with gold medals just for showing up.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/3. the 5 am club.jpg" alt="The 5 AM Club">
+            <span class="book-name">
+                The 5 AM Club
+               
+                <p class="author">
+                    ~ Robin Sharma
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc3"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 190/-</span></span>
+            <div class="modal fade" id="desc3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The 5 AM Club</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Legendary leadership and elite performance expert Robin Sharma introduced The 5 AM Club concept over twenty years ago, based on a revolutionary morning routine that has helped his clients maximize their productivity, activate their best health and bulletproof their serenity in this age of overwhelming complexity.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/4. atomic habits.jpg" alt="Atomic Habits">
+            <span class="book-name">
+                Atomic Habits
+                
+                <p class="author">
+                    ~ James Clear
+                    <br>
+                    <span class="rating">
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    </span>
+                </p>
+                <a href="../Third Page/BuyBook.html">
+                    <button style="margin-top: -20px;" class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc4" style="margin:-15px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price" style="margin-bottom:20px;"> 250/-</span></span>
+            <div class="modal fade" id="desc4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Atomic Habits</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            In this ground-breaking book, Clear reveals how these tiny changes will help you get 1 percent better every day. He uncovers a handful of simple life hacks (the forgotten art of Habit Stacking, the unexpected power of the Two Minute Rule, or the trick to entering the Goldilocks Zone) and delves into cutting-edge psychology and neuroscience to explain why they matter. Along the way, he tells inspiring stories of Olympic gold medalists, leading CEOs and distinguished scientists who have used the science of small habits to stay productive, motivated and happy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/5. the 4 hour work week.jpg" alt="The 4 Hour Work Week">
+            <span class="book-name">
+               The 4 Hour Work Week
+                
+                <p class="author">
+                    ~ Timothy Ferriss
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc5"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price">170/-</span></span>
+            <div class="modal fade" id="desc5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The 4 Hour Work Week</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Forget the old concept of retirement and the rest of the deferred-life plan - there is no need to wait and every reason not to, especially in unpredictable economic times. Whether your dream is escaping the rat race, experiencing high-end world travel, earning a monthly five-figure income with zero management, or just living more and working less, this book is the blueprint.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/6. the power of your subconscious mind.jpg" alt="The Power Of Your Subconscious Mind">
+            <span class="book-name">
+                The Power Of Your Subconscious Mind
+                
+                <p class="author">
+                    ~ Joseph Murphy
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc6"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 240/-</span></span>
+            <div class="modal fade" id="desc6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Power Of Your Subconscious Mind</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            This remarkable book by Dr. Joseph Murphy, one of the pioneering voices of affirmative thinking, will unlock for you the truly staggering powers of your subconscious mind. Combining time-honored spiritual wisdom with cutting edge scientific research, Dr. Murphy explains how the subconscious mind influences every single thing that you do and how, by understanding it and learning to control its incredible force, you can improve the quality of your daily life.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/7. who moved my cheese.jpg" alt="Who Moved My Cheese">
+            <span class="book-name">
+               Who Moved My Cheese
+                
+                <p class="author">
+                    ~ Spencer Johnson
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc7" style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 200/-</span></span>
+            <div class="modal fade" id="desc7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Who Moved My Cheese</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Who Moved My Cheese? is a simple parable that reveals profound truths. It is the amusing and enlightening story of four characters who live in a maze and look for cheese to nourish them and make them happy. Cheese is a metaphor for what you want to have in life, for example a good job, a loving relationship, money or possessions, health or spiritual peace of mind. The maze is where you look for what you want, perhaps the organisation you work in, or the family or community you live in. The problem is that the cheese keeps moving.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Self_help/8. how to stop worrying and start living.jpg" alt="How To Stop Worrying And Start Living">
+            <span class="book-name">
+               How To Stop Worrying And Start Living
+                <p class="author">
+                    ~ Dale Carnegie
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                <button class="buy-btn btn btn-outline-primary">
+                    Buy Now
+                </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc8" style="margin-top: 0px;">
+                    Know More
+                </button>
+                <span class="price"> 500/-</span>
+            </span>
+            <div class="modal fade" id="desc8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">How To Stop Worrying And Start Living</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            International bestseller over 30 million copies sold worldwide learn how to break the worry habit now and forever! From the fundamental facts one must know about worry to the techniques in analyzing it, This book introduces ways to prevent apprehension and cultivate a mental attitude that will bring peace and happiness. Dealing with fundamental emotions and life-changing thoughts, how to stop worrying and Start living highlights positive points of life and Discourages stress and anxiety.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------  BOOK-SHELF ENDING  ---------------------------------------------->
+
+<script src="common.js"></script>
+</body>
+</html>

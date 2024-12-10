@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../CSS, HTML, icons/favicon.ico" sizes="128x128">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost And Bound</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="common.css">
+
+</head>
+
+<body>
+    <!------------------------------------  HEADER STARTING -------------------------------------->
+    <header>
+        <!-- logo for website -->
+        <a href="../Main.html"><img id="logo" src="../CSS, HTML, icons/logo.png"></a>
+
+        <!-- Navigation bar for home , main ,etc -->
+        <ul id="nav">
+            <li><a href="../Main.html">Home</a></li>
+            <li><a href="#">Top</a></li>
+            <li><a href="#books">Visit Book Shelf</a></li>
+            <!-- <li><a href="#review">Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li> -->
+        </ul>
+        <button id="circle">| |</button>
+    </header>
+    <!------------------------------------  HEADER ENDING -------------------------------------->
+
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES STARTING -------------------------------------->
+    <div>
+        <ul class="nav-small" style="font-family: 'Georgia';">
+            <li><a class="nav-btn" href="../Main.html">Home</a></li>
+            <li><a class="nav-btn" href="#">Top</a></li>
+            <li><a class="nav-btn" href="#books">Visit Book Shelf</a></li>
+        </ul>
+    </div>
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES ENDING -------------------------------------->
+    <div class="bg-image"></div>
+    <!----------------BACKGROUND IMAGE--------------------------------------->
+    <!--------------------------------------------------SLIDESHOW CAROUSEL---------------------------------------------->
+
+    <div class="container">
+        <div class="carousel slide" id="main-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#main-carousel" data-slide-to="1"></li>
+                <li data-target="#main-carousel" data-slide-to="2"></li>
+                <li data-target="#main-carousel" data-slide-to="3"></li>
+            </ol><!-- /.carousel-indicators -->
+
+            <div class="carousel-inner ">
+                <div class="carousel-item">
+                    <img class="d-block" src="Slideshow/10 Brilliant Book Ads.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1></h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block" src="Slideshow/slideshow image 2.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block" src="Slideshow/slideshow image 3.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="Slideshow/slideshowww.jpg" alt="" class="d-block">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /.carousel-inner -->
+
+
+        </div><!-- /.carousel -->
+    </div><!-- /.container -->
+    <!--------------------------------------------------SLIDESHOW CAROUSEL ENDING---------------------------------------------->
+    <!------------------------------------------------  BOOK-SHELF STARTING  ---------------------------------------------->
+
+    <section id="books">
+        <DIV id="space"></DIV>
+        <div class="book">
+            <img src="../BookCovers/Sci-fi/1. Lord of the rings.jpg"
+                alt="Lord Of The Rings">
+            <span class="book-name">
+                Lord Of The Rings
+                <p class="author">
+                    ~ J.R.R. Tolkien
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc1"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Lord Of The Rings
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Continuing the story of The Hobbit, this three-volume boxed set of Tolkien’s epic masterpiece, The Lord of the Rings, features striking black covers based on Tolkien’s own design, the definitive text, and three maps including a detailed map of Middle-earth. Sauron, the Dark Lord, has gathered to him all the Rings of Power – the means by which he intends to rule Middle-earth. All he lacks in his plans for dominion is the One Ring – the ring that rules them all – which has fallen into the hands of the hobbit, Bilbo Baggins.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../BookCovers/Sci-fi/2. 1984.jpg" alt="1984">
+            <span class="book-name">
+                1984
+
+                <p class="author">
+                    ~ George Orwell
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc2"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 140/-</span>
+            </span>
+            <div class="modal fade" id="desc2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">1984</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            1984: A Novel, unleashes a unique plot as per which No One is Safe or Free. No place is safe to run or even hide from a dominating party leader, Big Brother, who is considered equal to God. This is a situation where everything is owned by the State. The world was seeing the ruins of World War II. Leaders such as Hitler, Stalin and Mussolini prevailed during this phase. Big Brother is always watching your actions. He even controls everyone’s feelings of love, to live and to discover. The basic plot of this historic novel revolves around the concept that no person has freedom to live life on his or her own terms. The present day is 1984.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Sci-fi/3. Brave new world.jpg"
+                alt="Brave New World">
+            <span class="book-name">
+                Brave New World
+
+                <p class="author">
+                    ~ Colleen Margaret Atwood
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc3"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 190/-</span>
+            </span>
+            <div class="modal fade" id="desc3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Brave New World
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Brave New World is a novel with a science-fiction theme written by bestselling author, Aldous Huxley, and was first published in 1932. It is set in the far future, in 2540 AD and features a utopian view of the society at that time, with a lot of material dedicated to sleep learning, reproductive technology, and classical conditioning. The title is derived from a line in Shakespeare’s The Tempest.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Sci-fi/4. animal farm.jpg" alt="Animal Farm">
+            <span class="book-name">
+                Animal Farm
+                <p class="author">
+                    ~ George Orwell
+                    <br>
+                    <span class="rating">
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    </span>
+                </p>
+                <a href="../Third Page/BuyBook.html">
+                    <button style="margin-top: -20px;" class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc4"
+                    style="margin:-15px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price" style="margin-bottom:20px;"> 250/-</span>
+            </span>
+            <div class="modal fade" id="desc4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Animal Farm</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            When the oppressed animals of Manor Farm defeat their master, Mr. Jones and take over the farm for themselves, they envisage it to be the beginning of independence and abundance. However, a devious and heartless elite among the animals starts to take control and the other animals find themselves helplessly trapped as another gradually replaces one form of dictatorship. Orwell’s frightening ‘fairy story’ is a timeless and overwhelming satire of idealism.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Sci-fi/5. The dark tower secrets.jpg" alt="The Dark Tower Secrets">
+            <span class="book-name">
+                The Dark Tower Secrets
+
+                <p class="author">
+                    ~ Stephen King
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc5"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price">170/-</span>
+            </span>
+            <div class="modal fade" id="desc5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Dark Tower Secrets</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            'The man in black fled across the desert, and the gunslinger followed.' The iconic opening line of Stephen King's groundbreaking series, The Dark Tower, introduces one of his most enigmatic and powerful heroes: Roland of Gilead, the Last Gunslinger. Roland is a haunting figure, a loner, on a spellbinding journey toward the mysterious Dark Tower, in a desolate world which frighteningly echoes our own. On his quest, Roland begins a friendship with a kid from New York named Jake, encounters an alluring woman and faces an agonising choice between damnation and salvation as he pursues the Man in Black.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Sci-fi/6. 2001 a space odyssey.jpg" alt="2001: A Space Odyssey">
+            <span class="book-name">
+                2001: A Space Odyssey
+                <p class="author">
+                    ~ Arthur C. Clarke
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc6"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 240/-</span>
+            </span>
+            <div class="modal fade" id="desc6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">2001: A Space Odyssey</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            This allegory about humanity’s exploration of the universe—and the universe’s reaction to humanity—is a hallmark achievement in storytelling that follows the crew of the spacecraft Discovery as they embark on a mission to Saturn. Their vessel is controlled by HAL 9000, an artificially intelligent supercomputer capable of the highest level of cognitive functioning that rivals—and perhaps threatens—the human mind. Grappling with space exploration, the perils of technology, and the limits of human power, 2001: A Space Odyssey continues to be an enduring classic of cinematic scope.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Sci-fi/7. to sleep in a sea of stars.jpg" alt="To Sleep In A Sea Of Stars">
+            <span class="book-name">
+                To Sleep In A Sea Of Stars
+
+                <p class="author">
+                    ~ Christopher Paolini
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc7"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">To Sleep In A Sea Of Stars</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            During a routine survey mission on an uncolonized planet, Kira finds an alien relic. At first she’s delighted, but elation turns to terror when the ancient dust around her begins to move. As war erupts among the stars, Kira is launched into a galaxy-spanning odyssey of discovery and transformation. First contact isn’t at all what she imagined, and events push her to the very limits of what it means to be human. While Kira faces her own horrors, Earth and its colonies stand upon the brink of annihilation. Now, Kira might be humanity’s greatest and final hope . . .
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Sci-fi/8. cage of souls.jpg" alt="Cage Of Souls">
+            <span class="book-name">
+                Cage Of Souls
+                <p class="author">
+                    ~ Arthur C. Clarke
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                <button class="buy-btn btn btn-outline-primary">
+                    Buy Now
+                </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc8"
+                    style="margin-top: 0px;">
+                    Know More
+                </button>
+                <span class="price"> 500/-</span>
+            </span>
+            <div class="modal fade" id="desc8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Cage Of Souls</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            The sun is bloated, diseased, dying perhaps. Beneath its baneful light, Shadrapar, last of all cities, harbours fewer than 100,000 human souls. Built on the ruins of countless civilisations, Shadrapar is a museum, a midden, an asylum, a prison on a world that is ever more alien to humanity. Bearing witness to the desperate struggle for existence between life old and new is Stefan Advani: rebel, outlaw, prisoner, survivor. This is his testament, an account of the journey that took him into the blazing desolation of the western deserts; that transported him east down the river and imprisoned him in the verdant hell of the jungle's darkest heart; that led him deep into the labyrinths and caverns of the underworld. He will meet with monsters, madman, mutants. The question is, which one of them will inherit this Earth?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------  BOOK-SHELF ENDING  ---------------------------------------------->
+
+    <script src="common.js"></script>
+</body>
+
+</html>

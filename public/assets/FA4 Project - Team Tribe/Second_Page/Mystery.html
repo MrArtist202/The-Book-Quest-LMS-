@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../CSS, HTML, icons/favicon.ico" sizes="128x128">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost And Bound</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="common.css">
+    
+</head>
+<body>
+    <!------------------------------------  HEADER STARTING -------------------------------------->
+    <header>
+        <!-- logo for website -->
+        <a href="../Main.html"><img id="logo" src="../CSS, HTML, icons/logo.png"></a>
+    
+        <!-- Navigation bar for home , main ,etc -->
+        <ul id="nav">
+            <li><a href="../Main.html">Home</a></li>
+            <li><a href="#">Top</a></li>
+            <li><a href="#books">Visit Book Shelf</a></li>
+            <!-- <li><a href="#review">Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li> -->
+        </ul>
+        <button id="circle">| |</button>
+    </header>
+    <!------------------------------------  HEADER ENDING -------------------------------------->
+    
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES STARTING -------------------------------------->
+    <div>
+        <ul class="nav-small" style="font-family: 'Georgia';">
+            <li><a class="nav-btn" href="../Main.html">Home</a></li>
+            <li><a class="nav-btn" href="#">Top</a></li>
+            <li><a class="nav-btn" href="#books">Visit Book Shelf</a></li>
+        </ul>
+    </div>
+    <!------------------------------------  NAV-BAR SMALL FOR SMALLER DEVICES ENDING -------------------------------------->
+    <div class="bg-image"></div><!----------------BACKGROUND IMAGE--------------------------------------->
+    <!--------------------------------------------------SLIDESHOW CAROUSEL---------------------------------------------->
+    
+    <div class="container" >
+        <div class="carousel slide" id="main-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#main-carousel" data-slide-to="1"></li>
+            <li data-target="#main-carousel" data-slide-to="2"></li>
+            <li data-target="#main-carousel" data-slide-to="3"></li>
+          </ol><!-- /.carousel-indicators -->
+          
+        <div class="carousel-inner ">
+            <div class="carousel-item">
+                <img class="d-block" src="Slideshow/10 Brilliant Book Ads.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="Slideshow/slideshow image 2.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img class="d-block" src="Slideshow/slideshow image 3.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Slideshow/slideshowww.jpg" alt="" class="d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+          
+          <!-- /.carousel-inner -->
+          
+          
+        </div><!-- /.carousel -->
+      </div><!-- /.container -->
+     <!--------------------------------------------------SLIDESHOW CAROUSEL ENDING---------------------------------------------->
+    <!------------------------------------------------  BOOK-SHELF STARTING  ---------------------------------------------->
+    
+    <section id="books">
+        <DIV id="space"></DIV>
+        <div class="book">
+            <img src="../BookCovers/Mystery/1. murder on the orient express.jpg" alt="Murder On The Orient Express">
+            <span class="book-name">
+            Murder On The Orient Express
+               
+                <p class="author">
+                    ~ Hercule Poirot
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                    Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc1"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 200/-</span></span>
+            <div class="modal fade" id="desc1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Murder On The Orient Express</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Agatha Christie’s most famous murder mystery. Just after midnight, a snowdrift stops the Orient Express in its tracks. The luxurious train is surprisingly full for the time of the year, but by the morning it is one passenger fewer. An American tycoon lies dead in his compartment, stabbed a dozen times, his door locked from the inside. Isolated and with a killer in their midst, detective Hercule Poirot must identify the murderer – in case he or she decides to strike again.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/12. scar tissue.jpg" alt="Scar Tissue">
+            <span class="book-name">
+                Scar Tissue
+        
+                <p class="author">
+                    ~ Finn
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc9"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Scar Tissue</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            In SCAR TISSUE Anthony Kiedis, charismatic and highly articulate frontman of the Red Hot Chili Peppers, recounts his remarkable life story, and the history of the band itself. Raised in the Midwest, he moved to LA aged eleven to live with his father Blackie, purveyor of pills, pot, and cocaine to the Hollywood elite. After a brief child-acting career, Kiedis dropped out of U.C.L.A. and plunged headfirst into the demimonde of the L.A. underground music scene. He formed the band with three schoolfriends - and found his life's purpose. Crisscrossing the country, the Chili Peppers were musical innovators and influenced a whole generation of musicians.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/11. find the lady.jpg" alt="Find The Lady">
+            <span class="book-name">
+                Find The Lady
+        
+                <p class="author">
+                    ~ Jason M. King
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc10"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Find The Lady</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            A blind woman is found murdered in the South Yorkshire town of Bromersley. Three unconnected witnesses swear that they saw a woman in a blue dress flee the scene minutes before the body is found. In addition, a picture of the wanted woman, whose likeness was painted sixty years earlier, is discovered in the house of an acquaintance of the victim!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/10. a date with murder.jpg" alt="A Date With Murder">
+            <span class="book-name">
+                A Date With Murder
+        
+                <p class="author">
+                    ~ Jessica Fletcher, Donald Bain, and Jon Land
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc11"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">A Date With Murder</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            A cool, slim, beautiful girl drove up to Mark Warren’s service station in the California desert and asked to have her gas tank filled so she might continue on her flight from some men who insisted on shooting at her. Intrigued, Mark, an ex-newspaper reporter who had gone West for his health, followed the girl to a luxurious date ranch.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/9. Once buried.jpg" alt="Once Buried">
+            <span class="book-name">
+                Once Buried
+        
+                <p class="author">
+                    ~ Black Pierce
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc12"
+                    style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+                <span class="price"> 200/-</span>
+            </span>
+            <div class="modal fade" id="desc12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Once Buried</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Amidst intense media pressure, and in a frantic race against time, FBI Special Agent Riley Paige is summoned, with her new partner, to crack the case. Still reeling from the fallout with Shane, trying to sort out her family life, and to help Bill get back on his feet, Riley’s plate is already full. And as she enters the darkest canals of this twisted killer’s mind, this just may be the case that sets her over the edge. A dark psychological thriller with heart-pounding suspense, ONCE BURIED is book #11 in a riveting new series—with a beloved new character—that will leave you turning pages late into the night.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/2. and then there were none.jpg" alt="And Then There Were None">
+            <span class="book-name">
+                And Then There Were None
+                
+                <p class="author">
+                    ~ Agatha Christie
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc2"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 140/-</span></span>
+            <div class="modal fade" id="desc2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">And Then There Were None</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            The clear winner in an international online poll held to discover the world’s favourite Agatha Christie book, this new paperback also coincides with a new 3-part BBC TV adaptation featuring a stellar ensemble cast: Douglas Booth, Charles Dance, Maeve Dermody, Burn Gorman, Anna Maxwell Martin, Sam Neill, Miranda Richardson, Toby Stephens, Noah Taylor and Aidan Turner. A story about  10 strangers including a reckless playboy, a troubled Harley Street doctor, a formidable judge, an uncouth detective, an unscrupulous mercenary, a God-fearing spinster, two restless servants, a highly decorated general and an anxious secretary. One by one they are picked off. Who will survive? And who is the killer? Copies of an ominous nursery rhyme hang in each room, the murders mimicking the awful fates of its ‘Ten Little Soldier Boys’.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/3. the davinci code.jpg" alt="The Davinci Code">
+            <span class="book-name">
+                The Davinci Code
+               
+                <p class="author">
+                    ~ Dan Brown
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc3"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 190/-</span></span>
+            <div class="modal fade" id="desc3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Davinci Code</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            The record-breaking bestseller. A man is murdered in the world’s most famous museum. Around his body is a ring of codes, drawn in blood. He died to protect a secret which Robert Langdon must uncover. It will be a race against time to decipher this final message. Can he get there before the killers do?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/4. the murder of roger ackroyd.jpg" alt="The Murder Of Roger Ackroyd">
+            <span class="book-name">
+                The Murder Of Roger Ackroyd
+                
+                <p class="author">
+                    ~ Agatha Christie
+                    <br>
+                    <span class="rating">
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                        <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    </span>
+                </p>
+                <a href="../Third Page/BuyBook.html">
+                    <button style="margin-top: -20px;" class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc4" style="margin:-15px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price" style="margin-bottom:20px;"> 250/-</span></span>
+            <div class="modal fade" id="desc4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Murder Of Roger Ackroyd</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Agatha Christie’s most daring crime mystery - an early and particularly brilliant outing of Hercule Poirot, ‘The Murder of Roger Ackroyd’, with its legendary twist, changed the detective fiction genre for ever. Roger Ackroyd knew too much. He knew that the woman he loved had poisoned her brutal first husband. He suspected also that someone had been blackmailing her. Now, tragically, came the news that she had taken her own life with a drug overdose. But the evening post brought Roger one last fatal scrap of information. Unfortunately, before he could finish the letter, he was stabbed to death…
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/5. the lost symbol.jpg" alt="The Lost Symbol">
+            <span class="book-name">
+                The Lost Symbol
+                
+                <p class="author">
+                    ~ Dan Brown
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc5"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price">170/-</span></span>
+            <div class="modal fade" id="desc5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Lost Symbol</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            A mysterious invitation brings Robert Langdon to Washington DC. There, he is presented with a sequence of bloody clues which he must unravel if he is to prevent a terrible plan. But all is not as it seems in this dangerous city – an ancient organisation will reassert its power once more. The only man standing in its way - Robert Langdon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/6. the big sleep.jpg" alt="The Big Sleep">
+            <span class="book-name">
+                The Big Sleep
+                
+                <p class="author">
+                    ~ Raymond Chandler
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span><br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc6"style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 240/-</span></span>
+            <div class="modal fade" id="desc6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Big Sleep</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Los Angeles Private Investigator Philip Marlowe is hired by wheelchair-bound General Sternwood to discover who is blackmailing him. A broken, weary old man, Sternwood just wants Marlowe to make the problem go away. However, with Sternwood's two wild, devil-may-care daughters prowling LA's seedy backstreets, Marlowe's got his work cut out. And that's before he stumbles over the first corpse.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/7. gone girl.jpg" alt="Gone Girl">
+            <span class="book-name">
+                Gone Girl
+                
+                <p class="author">
+                    ~ Gillian Flynn
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                    <button class="buy-btn btn btn-outline-primary">
+                        Buy Now
+                    </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc7" style="margin:5px 0 0 0;">
+                    Know More
+                </button>
+            <span class="price"> 200/-</span></span>
+            <div class="modal fade" id="desc7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Gone Girl</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Gone Girl centers its story about Nick and Amy Dunne's strained marriage relationship. Nick used to work as a journalist, but loses his job. With his broke financial status, Nick decides to relocate from New York City to his smaller home town, North Carthage. In an attempt of recovering from his financial deprivations, Nick opens a bar using the money from his wife. Nick runs the bar along with his twin sister Margo, providing a decent living for his family. But, as they days go by, his marriage with Amy is falling apart slowly. Amy resents her new life.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <img src="../BookCovers/Mystery/8. the woman in white.jpg" alt="The Woman In The White">
+            <span class="book-name">
+                The Woman In The White
+                <p class="author">
+                    ~ Wilkie Collins
+                </p>
+                <span class="rating">
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                    <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" />
+                </span>
+                <br>
+                <a href="../Third Page/BuyBook.html">
+                <button class="buy-btn btn btn-outline-primary">
+                    Buy Now
+                </button>
+                </a>
+                <button type="button" class="know-more btn btn-outline-primary" data-toggle="modal" data-target="#desc8" style="margin-top: 0px;">
+                    Know More
+                </button>
+                <span class="price"> 500/-</span>
+            </span>
+            <div class="modal fade" id="desc8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">The Woman In The White</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            One of the earliest works of ‘detective’ fiction with a narrative woven together from multiple characters, Wilkie Collins partly based his infamous novel on a real-life eighteenth century case of abduction and wrongful imprisonment. In 1859, the story caused a sensation with its readers, hooking their attention with the ghostly first scene where the mysterious ‘Woman in White’ Anne Catherick comes across Walter Hartright. Chilling, suspenseful and tense in mood, the novel remains as emotive for its readers today as when it was first published.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------  BOOK-SHELF ENDING  ---------------------------------------------->
+
+<script src="common.js"></script>
+</body>
+</html>

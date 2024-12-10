@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Signup Form</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <section class="wrapper">
+    <div class="form signup">
+      <header>Signup</header>
+      <form method="post" action="/signup">
+        <input type="text" placeholder="Full name" required id="fullname" name="name" />
+        <input type="text" placeholder="Email address" required id="emid" name="email" />
+        <input type="password" placeholder="Password" required id="passw" name="pass" />
+        <div class="checkbox">
+          <input type="checkbox" id="signupCheck" />
+          <label for="signupCheck">I accept all terms & conditions</label>
+        </div>
+        <input type="submit" value="Signup" id="sign" />
+      </form>
+    </div>
+
+    <div class="form login">
+      <header>Login</header>
+      <form method="post" action="/login">
+        <input type="text" placeholder="Email address" required id="emid1" />
+        <input type="password" placeholder="Password" required id="passw1" />
+        <input type="submit" value="Login" id="logid" />
+      </form>
+    </div>
+
+    <script>
+      const wrapper = document.querySelector(".wrapper"),
+        signupHeader = document.querySelector(".signup header"),
+        loginHeader = document.querySelector(".login header");
+
+
+      const signupSubmit = document.getElementById("sign");
+
+      loginHeader.addEventListener("click", () => {
+        wrapper.classList.add("active");
+      });
+      signupHeader.addEventListener("click", () => {
+        wrapper.classList.remove("active");
+      });
+
+      var myName = document.getElementById('fullname');
+      var myEmail = document.getElementById('emid');
+      var myPassword = document.getElementById('passw');
+
+      signupSubmit.addEventListener("click", function (event) {
+        console.log("sending request to server");
+        event.preventDefault();
+
+        var obj = {
+          name: myName.value,
+          email: myEmail.value,
+          pass: myPassword.value
+        };
+
+        fetch("http://localhost:3031/signup", {
+          method: 'POST',
+          body: JSON.stringify(obj),
+          headers: {
+            'Content-Type': 'application/json'
+          },
+        })
+          .then(response => response.text())
+          .then(data => {
+            console.log(data);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          })
+
+        alert('Signup Succesfull');
+      });
+
+      var myEmail1 = document.getElementById('emid1');
+      var myPassword1 = document.getElementById('passw1');
+
+      const loginSubmit = document.getElementById("logid");
+
+      loginSubmit.addEventListener("click", async function (event) {
+        console.log("sending request to server");
+        event.preventDefault();
+
+        var obj = {
+          email: myEmail1.value,
+          pass: myPassword1.value
+        };
+
+        const response = await fetch("http://localhost:3031/login", {
+          method: 'POST',
+          body: JSON.stringify(obj),
+          headers: {
+            'Content-Type': 'application/json'
+          },
+        });
+
+        const result = await response.text();
+        console.log(result);
+        alert(result);
+        if(result == 'Login Successfull') {
+          window.location.href = "http://localhost:3000/";
+        }
+      });
+    </script>
+  </section>
+</body>
+
+</html>

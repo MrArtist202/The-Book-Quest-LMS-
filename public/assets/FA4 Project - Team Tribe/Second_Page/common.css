@@ -1,0 +1,262 @@
+/*************************************** CSS VARIABLES ***************************************/
+:root{
+	--nav_bar_hover:rgb(248, 0, 103);
+	--bg_light:#ffffff;
+	--contact_input:rgba(0, 0, 0, 0.774);
+}
+/*************************************** CSS VARIABLES ***************************************/
+html{
+	scroll-behavior: smooth;
+}
+/*************************************** BODY CSS ***************************************/
+body{
+	min-height: 100vh;
+	width: 100vw;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body{
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar-track {
+  background: white;
+}
+body::-webkit-scrollbar-thumb {
+  background:  grey;
+  border-radius: 25px;
+}
+/*************************************** BODY CSS ***************************************/
+
+/*************************************** HEADER: LOGO, LINKS, NAVIGATION ***************************************/
+header{
+	/* All About the Header And Navigation */
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	width: 99.5vw;
+	background:rgba(0, 0, 0, 0.658);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 0 0 10px 10px;
+	/* backdrop-filter:blur(5px); */
+	z-index:1 ;
+}
+a{
+	text-decoration: none;
+}
+ul{
+    margin-top: 10px;
+	list-style-type: none;
+	display: flex;
+}
+#logo{
+	/* logo in the top-left corner */
+	height: 78px;
+	width: 85px;
+	margin-left: 2vw;
+	transform: rotate(15deg);
+	z-index: -1;
+}
+/******************  NAVIGATION  ********************/
+#nav a{
+	/* About The Navigation Links */
+	margin-left: 5vw;
+	font-size: 1.7rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	color:rgba(251, 255, 215, 0.856);
+	border:0.5px solid;
+	border-color: transparent;
+	transition: all 0.1s;
+	transition-timing-function: ease-in-out;
+	z-index: -1;
+}
+#nav a:hover{
+    text-decoration: none;
+	color: var(--nav_bar_hover);
+	border:3px solid;
+	border-color: var(--nav_bar_hover) transparent;
+}
+#nav{
+	margin-right: 2vw;
+}
+/********************  NAVIGATION  ***********************/
+/*************************************** HEADER: LOGO, LINKS, NAVIGATION ***************************************/
+
+/*************************************** NAVIGATION FOR SMALLER DEVICES ***************************************/
+.nav-small{
+	position: fixed;
+ 	display: none;
+ 	z-index: 1;
+}
+.nav-small li a{
+	color:#3d3d3d;
+}
+.nav-bar-Toggled{
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 80px;
+	margin-top: -9px;
+	margin-left: -49px;
+	position: fixed;
+	background-color: var(--bg_light);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 105vh;
+	width: 110vw;
+}
+#circle{
+	height: 15px;
+	display: none;
+	border-radius: 50%;
+	font-weight: bolder;
+	padding: 0 0.5rem;
+	padding-top: 0.4rem;
+	padding-bottom: 1.3rem;
+	border:8px solid salmon;
+	background-color:salmon;
+	box-shadow: 0 0 5px salmon,
+				0 0 10px salmon;
+	margin-right: 25px;
+	margin-top: 10px;
+	animation-name: circle-hue;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	cursor: pointer;
+}
+#circle:focus{
+	outline: none;
+}
+@keyframes circle-hue{
+	0%{
+		filter:hue-rotate(0deg);
+	}
+	100%{
+		filter:hue-rotate(360deg);
+			
+	}
+}
+@media only screen and (max-width:850px){
+	#nav{
+		display: none;
+	}
+	#circle{
+		display: block;
+	}
+}
+/*************************************** NAVIGATION FOR SMALLER DEVICES ***************************************/
+#space{
+	width:100vw;
+	height: 50px;
+}
+.bg-image {
+    background-image: url("../bg/11.jpg");
+    position: fixed;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat:repeat-y;
+    background-size: cover;
+    z-index: -1;
+}
+/***********************************CAROUSEL*********************************************/
+.container {
+	width: 80vw;
+	position:relative;
+	top: 70px;
+	background-color: #ffffff;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	border-radius: 15px;
+	z-index: 0;
+}
+.carousel-item{
+	width: 80vw;
+}
+.carousel-caption{
+	margin-left: -100px;
+}
+.d-block{
+	height: 360px;
+	margin: 25px 0px 25px 15px;
+	width: 70vw;
+	border-radius: 25px;
+	box-shadow: 0 0 10px black;
+}
+/*************************************  BOOKS SECTION ************************************/
+.book{
+    margin-left: 3vw;
+    float: left;
+    margin-top: 40px;
+    display: flex;
+    height: 200px;
+    width: 45%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.2);
+    overflow-y:scroll;
+}
+.book::-webkit-scrollbar{
+	width: 0px;
+}
+.book img{
+    image-rendering: optimizeQuality;
+    margin-right: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 200px;
+    width: 150px;
+}
+.book .book-name{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.book .rating img{
+    height: 30px;
+    width: 30px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+.price{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 5px 10px;
+	border-radius: 15px;
+	border:2px solid red;
+	color:red;
+	border-radius: 10px;
+	font-size: 20px;
+}
+.author{
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.book a{
+    font-size: 19px;
+    height: 30px;
+    width: auto;
+}
+.modal-content{
+	background-image: url("../bg/17.jpg");
+	background-size: cover;
+	font-size: 17px;
+	font-weight: 500;
+	font-family: Arial, Helvetica, sans-serif;
+	background-position: right;
+	filter:saturate(80%);
+	color: white;
+	text-shadow:0 0 10px rgba(0, 0, 0, 0.658);
+}
+.modal-title{
+	font-size: 20px;
+}
+/*************************************  BOOKS SECTION ************************************/
